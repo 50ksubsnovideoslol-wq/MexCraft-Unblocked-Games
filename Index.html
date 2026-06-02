@@ -3,256 +3,862 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Drive</title>
+    <title>David Attenborough Info</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>My Unblocked Games</h1>
-            <div class="prompt-text">Welcome to the best unblocked games site ever!</div>
-            <div class="search-container">
-                <input type="text" id="gameSearch" placeholder="Search for a game...">
+<body class="layout-left">
+    
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>MexCraft Unblocked Games</h2>
+        </div>
+        <div class="search-container">
+            <input type="text" id="gameSearch" placeholder="Search...">
+        </div>
+        <nav class="sidebar-games" id="sidebarList">
+            <div class="sidebar-item" onclick="playGame('21ea52tvy', this)">Babel Tower</div><div class="sidebar-item" onclick="playGame('z7icb9p9u', this)">MotoX3m</div><div class="sidebar-item" onclick="playGame('0hi37a9ch', this)">MotoX3m 2</div><div class="sidebar-item" onclick="playGame('x85xox8wq', this)">MotoX3m 3</div><div class="sidebar-item" onclick="playGame('dcmg0mju6', this)">MotoX3M Pool Party</div><div class="sidebar-item" onclick="playGame('tbwd3zolv', this)">MotoX3m Spooky Land</div><div class="sidebar-item" onclick="playGame('ber7shpji', this)">MotoX3m Winter</div><div class="sidebar-item" onclick="playGame('m5a3n4xqf', this)">geometry dash lite</div><div class="sidebar-item" onclick="playGame('14eg0pfzi', this)">Geometry Dash SubZero</div><div class="sidebar-item" onclick="playGame('relao7dcs', this)">SoundBoard</div><div class="sidebar-item" onclick="playGame('i97of3qdy', this)">ChatBot</div><div class="sidebar-item" onclick="playGame('61nua11un', this)">Raldi's Crackhouse</div><div class="sidebar-item" onclick="playGame('a16pzig7l', this)">RedBall 4</div><div class="sidebar-item" onclick="playGame('jorgutp23', this)">Retro PingPong</div><div class="sidebar-item" onclick="playGame('npypsyotp', this)">Retro Bowl</div><div class="sidebar-item" onclick="playGame('zu1y32kr3', this)">2 3 4 Player Games</div><div class="sidebar-item" onclick="playGame('rdg6kly3q', this)">2048</div><div class="sidebar-item" onclick="playGame('ohefogsj7', this)">1v1.lol</div><div class="sidebar-item" onclick="playGame('ztrpehzbc', this)">Five Nights At Epstein's</div><div class="sidebar-item" onclick="playGame('7oxttsqkm', this)">FNAF</div><div class="sidebar-item" onclick="playGame('2ad8ccji2', this)">FNAF 2</div><div class="sidebar-item" onclick="playGame('rjzotar3f', this)">FNAF 3</div><div class="sidebar-item" onclick="playGame('ie527hfmr', this)">FNAF 4</div><div class="sidebar-item" onclick="playGame('d05de5x6w', this)">Temple Run 2</div><div class="sidebar-item" onclick="playGame('iqparlshg', this)">UnderTale Yellow</div><div class="sidebar-item" onclick="playGame('1mfl1e1bf', this)">99 Nights In The Forest</div><div class="sidebar-item" onclick="playGame('ivouit51l', this)">Slope</div><div class="sidebar-item" onclick="playGame('arfj2zxot', this)">EagleCraft Minecraft</div><div class="sidebar-item" onclick="playGame('lb8ajoogk', this)">FNF</div><div class="sidebar-item" onclick="playGame('qdce3jrx4', this)">GTA</div><div class="sidebar-item" onclick="playGame('jwwzuyusz', this)">skypack</div><div class="sidebar-item" onclick="playGame('oj2kl5bf6', this)">Drift Boss</div><div class="sidebar-item" onclick="playGame('ewtal7932', this)">Drive Mad</div><div class="sidebar-item" onclick="playGame('id1b2l8lh', this)">grow a garden</div><div class="sidebar-item" onclick="playGame('thz2gntz4', this)">Granny</div><div class="sidebar-item" onclick="playGame('18w0st3pw', this)">Geometry Dash Bloodbath</div><div class="sidebar-item" onclick="playGame('duolq4xav', this)">Geometry Dash Deadlocked</div><div class="sidebar-item" onclick="playGame('wb9cgtfzm', this)">Undertale</div><div class="sidebar-item" onclick="playGame('rk95s0zy8', this)">Poly Track Og</div><div class="sidebar-item" onclick="playGame('3ixbaocxb', this)">Poly Track Racing New</div><div class="sidebar-item" onclick="playGame('4gy60djh1', this)">hole.io</div><div class="sidebar-item" onclick="playGame('z0bsgu19s', this)">Cookie Clicker</div><div class="sidebar-item" onclick="playGame('lmqtdfuwm', this)">Cookie Clicker Mod Menu</div><div class="sidebar-item" onclick="playGame('8khgysvhz', this)">VibeFlow (spotify)</div>
+        </nav>
+    </aside>
+    
+
+    <div class="site-wrapper">
+        <div class="container">
+            <header>
+                
+                <div class="prompt-text">Welcome to my game this was made by ollie. thanks for playing</div>
+                
+            </header>
+
+        
+        <div class="top-banner">
+            <img src="https://cdn.mos.cms.futurecdn.net/yNbRqdBpDrCQMoP9NNfZ2d.jpg" alt="Google Classroom (updates)">
+            <div class="top-banner-content">
+                <h2>Google Classroom (updates)</h2>
+                <a href="https://classroom.google.com/c/ODY0MDY0NDE2Njc1?cjc=tioswg7p" target="_blank" class="banner-btn">Open Now</a>
             </div>
-        </header>
+        </div>
+        
+
+        <section id="gameOfTheWeek" class="section">
+            <h2 class="section-title">✨ Game of the Week</h2>
+            <div id="gotwGrid" class="gotw-grid">
+                <!-- Top 3 big, next 5 small -->
+            </div>
+        </section>
+
+        <section id="recommendations" class="section" style="display: none;">
+            <h2 class="section-title">🎯 Recommended for You</h2>
+            <div id="recommendationGrid" class="grid"></div>
+        </section>
+
+        <section class="section">
+            <div class="category-filters">
+                <button class="category-btn active" onclick="filterByCategory('All')">All</button>
+                <button class="category-btn" onclick="filterByCategory('Action')">Action</button><button class="category-btn" onclick="filterByCategory('Puzzle')">Puzzle</button><button class="category-btn" onclick="filterByCategory('Adventure')">Adventure</button><button class="category-btn" onclick="filterByCategory('Strategy')">Strategy</button><button class="category-btn" onclick="filterByCategory('Arcade')">Arcade</button><button class="category-btn" onclick="filterByCategory('RPG')">RPG</button><button class="category-btn" onclick="filterByCategory('Simulation')">Simulation</button><button class="category-btn" onclick="filterByCategory('Horror')">Horror</button><button class="category-btn" onclick="filterByCategory('Sports')">Sports</button><button class="category-btn" onclick="filterByCategory('Racing')">Racing</button><button class="category-btn" onclick="filterByCategory('Education')">Education</button><button class="category-btn" onclick="filterByCategory('Other')">Other</button>
+            </div>
+        </section>
 
         <main id="gameGrid" class="grid">
             
-                <div class="game-card" data-name="babel tower">
-                    <img src="https://loremflickr.com/400/300/Babel%20Tower,game" alt="Babel Tower">
-                    <div class="game-info">
-                        <h3>Babel Tower</h3>
-                        <button onclick="playGame('21ea52tvy')">Play Now</button>
-                    </div>
+        <div class="game-card" data-name="2 3 4 player games" data-category="General">
+            <img src="https://loremflickr.com/400/300/2%203%204%20Player%20Games,game" alt="2 3 4 Player Games">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>2 3 4 Player Games</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="motox3m">
-                    <img src="https://loremflickr.com/400/300/MotoX3m,game" alt="MotoX3m">
-                    <div class="game-info">
-                        <h3>MotoX3m</h3>
-                        <button onclick="playGame('z7icb9p9u')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('zu1y32kr3')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('zu1y32kr3')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="motox3m 2">
-                    <img src="https://loremflickr.com/400/300/MotoX3m%202,game" alt="MotoX3m 2">
-                    <div class="game-info">
-                        <h3>MotoX3m 2</h3>
-                        <button onclick="playGame('0hi37a9ch')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="2048" data-category="General">
+            <img src="https://loremflickr.com/400/300/2048,game" alt="2048">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>2048</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="motox3m 3">
-                    <img src="https://loremflickr.com/400/300/MotoX3m%203,game" alt="MotoX3m 3">
-                    <div class="game-info">
-                        <h3>MotoX3m 3</h3>
-                        <button onclick="playGame('x85xox8wq')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('rdg6kly3q')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('rdg6kly3q')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="motox3m pool party">
-                    <img src="https://loremflickr.com/400/300/MotoX3M%20Pool%20Party,game" alt="MotoX3M Pool Party">
-                    <div class="game-info">
-                        <h3>MotoX3M Pool Party</h3>
-                        <button onclick="playGame('dcmg0mju6')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="babel tower" data-category="General">
+            <img src="https://th.bing.com/th/id/OIP.H4iE76PHkRpHEIW38j-6mQHaD4?w=312&h=200&c=12&rs=1&o=6&dpr=1.5&pid=AlgoBlockDebug" alt="Babel Tower">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Babel Tower</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="motox3m spooky land">
-                    <img src="https://loremflickr.com/400/300/MotoX3m%20Spooky%20Land,game" alt="MotoX3m Spooky Land">
-                    <div class="game-info">
-                        <h3>MotoX3m Spooky Land</h3>
-                        <button onclick="playGame('tbwd3zolv')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('21ea52tvy')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('21ea52tvy')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="motox3m winter">
-                    <img src="https://loremflickr.com/400/300/MotoX3m%20Winter,game" alt="MotoX3m Winter">
-                    <div class="game-info">
-                        <h3>MotoX3m Winter</h3>
-                        <button onclick="playGame('ber7shpji')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+                        <div class="game-card series-card" data-name="motox3m" data-category="General">
+                            <div class="series-badge">SERIES (3 GAMES)</div>
+                            <img src="data:image/webp;base64,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" alt="MotoX3m">
+                            <div class="game-info">
+                                <div class="game-header">
+                                    <h3>MotoX3m Series</h3>
+                                    <span class="category-badge">General</span>
+                                </div>
+                                <p style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 1rem;">Collection of 3 titles.</p>
+                                <div class="button-group">
+                                    <button class="secondary" onclick="toggleSeries('series-motox3m', this, event)">View Collection</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="series-motox3m" class="series-expanded grid">
+                            
+                                <div class="game-card sub-card" data-name="motox3m" data-category="General">
+                                    <img src="data:image/webp;base64,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" alt="MotoX3m">
+                                    <div class="game-info">
+                                        <div class="game-header">
+                                            <h3>MotoX3m</h3>
+                                        </div>
+                                        <div class="button-group">
+                                            <button onclick="playGame('z7icb9p9u', null, event)">Play Now</button>
+                                            <button class="secondary" onclick="openInNewTab('z7icb9p9u', event)">↗</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="game-card sub-card" data-name="motox3m 2" data-category="General">
+                                    <img src="https://loremflickr.com/400/300/MotoX3m%202,game" alt="MotoX3m 2">
+                                    <div class="game-info">
+                                        <div class="game-header">
+                                            <h3>MotoX3m 2</h3>
+                                        </div>
+                                        <div class="button-group">
+                                            <button onclick="playGame('0hi37a9ch', null, event)">Play Now</button>
+                                            <button class="secondary" onclick="openInNewTab('0hi37a9ch', event)">↗</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="game-card sub-card" data-name="motox3m 3" data-category="General">
+                                    <img src="https://loremflickr.com/400/300/MotoX3m%203,game" alt="MotoX3m 3">
+                                    <div class="game-info">
+                                        <div class="game-header">
+                                            <h3>MotoX3m 3</h3>
+                                        </div>
+                                        <div class="button-group">
+                                            <button onclick="playGame('x85xox8wq', null, event)">Play Now</button>
+                                            <button class="secondary" onclick="openInNewTab('x85xox8wq', event)">↗</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    
+        <div class="game-card" data-name="motox3m pool party" data-category="General">
+            <img src="https://loremflickr.com/400/300/MotoX3M%20Pool%20Party,game" alt="MotoX3M Pool Party">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>MotoX3M Pool Party</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="geometry dash lite">
-                    <img src="https://loremflickr.com/400/300/geometry%20dash%20lite,game" alt="geometry dash lite">
-                    <div class="game-info">
-                        <h3>geometry dash lite</h3>
-                        <button onclick="playGame('m5a3n4xqf')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('dcmg0mju6')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('dcmg0mju6')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="geometry dash subzero">
-                    <img src="https://loremflickr.com/400/300/Geometry%20Dash%20SubZero,game" alt="Geometry Dash SubZero">
-                    <div class="game-info">
-                        <h3>Geometry Dash SubZero</h3>
-                        <button onclick="playGame('14eg0pfzi')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="motox3m spooky land" data-category="General">
+            <img src="https://loremflickr.com/400/300/MotoX3m%20Spooky%20Land,game" alt="MotoX3m Spooky Land">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>MotoX3m Spooky Land</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="soundboard">
-                    <img src="https://loremflickr.com/400/300/SoundBoard,game" alt="SoundBoard">
-                    <div class="game-info">
-                        <h3>SoundBoard</h3>
-                        <button onclick="playGame('relao7dcs')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('tbwd3zolv')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('tbwd3zolv')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="chatbot">
-                    <img src="https://loremflickr.com/400/300/ChatBot,game" alt="ChatBot">
-                    <div class="game-info">
-                        <h3>ChatBot</h3>
-                        <button onclick="playGame('i97of3qdy')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="motox3m winter" data-category="General">
+            <img src="https://loremflickr.com/400/300/MotoX3m%20Winter,game" alt="MotoX3m Winter">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>MotoX3m Winter</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="raldi's crackhouse">
-                    <img src="https://loremflickr.com/400/300/Raldi's%20Crackhouse,game" alt="Raldi's Crackhouse">
-                    <div class="game-info">
-                        <h3>Raldi's Crackhouse</h3>
-                        <button onclick="playGame('61nua11un')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('ber7shpji')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('ber7shpji')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="redball 4">
-                    <img src="https://loremflickr.com/400/300/RedBall%204,game" alt="RedBall 4">
-                    <div class="game-info">
-                        <h3>RedBall 4</h3>
-                        <button onclick="playGame('a16pzig7l')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="geometry dash lite" data-category="General">
+            <img src="https://loremflickr.com/400/300/geometry%20dash%20lite,game" alt="geometry dash lite">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>geometry dash lite</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="retro pingpong">
-                    <img src="https://loremflickr.com/400/300/Retro%20PingPong,game" alt="Retro PingPong">
-                    <div class="game-info">
-                        <h3>Retro PingPong</h3>
-                        <button onclick="playGame('jorgutp23')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('m5a3n4xqf')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('m5a3n4xqf')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="retro bowl">
-                    <img src="https://loremflickr.com/400/300/Retro%20Bowl,game" alt="Retro Bowl">
-                    <div class="game-info">
-                        <h3>Retro Bowl</h3>
-                        <button onclick="playGame('npypsyotp')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="geometry dash subzero" data-category="General">
+            <img src="https://loremflickr.com/400/300/Geometry%20Dash%20SubZero,game" alt="Geometry Dash SubZero">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Geometry Dash SubZero</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="2 3 4 player games">
-                    <img src="https://loremflickr.com/400/300/2%203%204%20Player%20Games,game" alt="2 3 4 Player Games">
-                    <div class="game-info">
-                        <h3>2 3 4 Player Games</h3>
-                        <button onclick="playGame('zu1y32kr3')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('14eg0pfzi')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('14eg0pfzi')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="2048">
-                    <img src="https://loremflickr.com/400/300/2048,game" alt="2048">
-                    <div class="game-info">
-                        <h3>2048</h3>
-                        <button onclick="playGame('rdg6kly3q')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="soundboard" data-category="General">
+            <img src="https://loremflickr.com/400/300/SoundBoard,game" alt="SoundBoard">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>SoundBoard</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="1v1.lol">
-                    <img src="https://loremflickr.com/400/300/1v1.lol,game" alt="1v1.lol">
-                    <div class="game-info">
-                        <h3>1v1.lol</h3>
-                        <button onclick="playGame('ohefogsj7')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('relao7dcs')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('relao7dcs')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="five nights at epstein's">
-                    <img src="https://loremflickr.com/400/300/Five%20Nights%20At%20Epstein's,game" alt="Five Nights At Epstein's">
-                    <div class="game-info">
-                        <h3>Five Nights At Epstein's</h3>
-                        <button onclick="playGame('ztrpehzbc')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="chatbot" data-category="General">
+            <img src="https://loremflickr.com/400/300/ChatBot,game" alt="ChatBot">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>ChatBot</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="fnaf">
-                    <img src="https://loremflickr.com/400/300/FNAF,game" alt="FNAF">
-                    <div class="game-info">
-                        <h3>FNAF</h3>
-                        <button onclick="playGame('7oxttsqkm')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('i97of3qdy')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('i97of3qdy')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="fnaf 2">
-                    <img src="https://loremflickr.com/400/300/FNAF%202,game" alt="FNAF 2">
-                    <div class="game-info">
-                        <h3>FNAF 2</h3>
-                        <button onclick="playGame('2ad8ccji2')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="raldi's crackhouse" data-category="General">
+            <img src="https://loremflickr.com/400/300/Raldi's%20Crackhouse,game" alt="Raldi's Crackhouse">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Raldi's Crackhouse</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="fnaf 3">
-                    <img src="https://loremflickr.com/400/300/FNAF%203,game" alt="FNAF 3">
-                    <div class="game-info">
-                        <h3>FNAF 3</h3>
-                        <button onclick="playGame('rjzotar3f')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('61nua11un')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('61nua11un')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="fnaf 4">
-                    <img src="https://loremflickr.com/400/300/FNAF%204,game" alt="FNAF 4">
-                    <div class="game-info">
-                        <h3>FNAF 4</h3>
-                        <button onclick="playGame('ie527hfmr')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="redball 4" data-category="General">
+            <img src="https://loremflickr.com/400/300/RedBall%204,game" alt="RedBall 4">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>RedBall 4</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="temple run 2">
-                    <img src="https://loremflickr.com/400/300/Temple%20Run%202,game" alt="Temple Run 2">
-                    <div class="game-info">
-                        <h3>Temple Run 2</h3>
-                        <button onclick="playGame('d05de5x6w')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('a16pzig7l')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('a16pzig7l')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="undertale yellow">
-                    <img src="https://loremflickr.com/400/300/UnderTale%20Yellow,game" alt="UnderTale Yellow">
-                    <div class="game-info">
-                        <h3>UnderTale Yellow</h3>
-                        <button onclick="playGame('iqparlshg')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="retro pingpong" data-category="General">
+            <img src="https://loremflickr.com/400/300/Retro%20PingPong,game" alt="Retro PingPong">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Retro PingPong</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="99 nights in the forest">
-                    <img src="https://loremflickr.com/400/300/99%20Nights%20In%20The%20Forest,game" alt="99 Nights In The Forest">
-                    <div class="game-info">
-                        <h3>99 Nights In The Forest</h3>
-                        <button onclick="playGame('1mfl1e1bf')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('jorgutp23')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('jorgutp23')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
-                <div class="game-card" data-name="slope">
-                    <img src="https://loremflickr.com/400/300/Slope,game" alt="Slope">
-                    <div class="game-info">
-                        <h3>Slope</h3>
-                        <button onclick="playGame('ivouit51l')">Play Now</button>
-                    </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="retro bowl" data-category="General">
+            <img src="https://loremflickr.com/400/300/Retro%20Bowl,game" alt="Retro Bowl">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Retro Bowl</h3>
+                    <span class="category-badge">General</span>
                 </div>
-            
-                <div class="game-card" data-name="eaglecraft minecraft">
-                    <img src="https://loremflickr.com/400/300/EagleCraft%20Minecraft,game" alt="EagleCraft Minecraft">
-                    <div class="game-info">
-                        <h3>EagleCraft Minecraft</h3>
-                        <button onclick="playGame('arfj2zxot')">Play Now</button>
-                    </div>
+                <div class="button-group">
+                    <button onclick="playGame('npypsyotp')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('npypsyotp')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
                 </div>
-            
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="1v1.lol" data-category="General">
+            <img src="https://loremflickr.com/400/300/1v1.lol,game" alt="1v1.lol">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>1v1.lol</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('ohefogsj7')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('ohefogsj7')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="five nights at epstein's" data-category="General">
+            <img src="https://loremflickr.com/400/300/Five%20Nights%20At%20Epstein's,game" alt="Five Nights At Epstein's">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Five Nights At Epstein's</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('ztrpehzbc')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('ztrpehzbc')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+                        <div class="game-card series-card" data-name="fnaf" data-category="General">
+                            <div class="series-badge">SERIES (4 GAMES)</div>
+                            <img src="https://loremflickr.com/400/300/FNAF,game" alt="FNAF">
+                            <div class="game-info">
+                                <div class="game-header">
+                                    <h3>FNAF Series</h3>
+                                    <span class="category-badge">General</span>
+                                </div>
+                                <p style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 1rem;">Collection of 4 titles.</p>
+                                <div class="button-group">
+                                    <button class="secondary" onclick="toggleSeries('series-fnaf', this, event)">View Collection</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="series-fnaf" class="series-expanded grid">
+                            
+                                <div class="game-card sub-card" data-name="fnaf" data-category="General">
+                                    <img src="https://loremflickr.com/400/300/FNAF,game" alt="FNAF">
+                                    <div class="game-info">
+                                        <div class="game-header">
+                                            <h3>FNAF</h3>
+                                        </div>
+                                        <div class="button-group">
+                                            <button onclick="playGame('7oxttsqkm', null, event)">Play Now</button>
+                                            <button class="secondary" onclick="openInNewTab('7oxttsqkm', event)">↗</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="game-card sub-card" data-name="fnaf 2" data-category="General">
+                                    <img src="https://loremflickr.com/400/300/FNAF%202,game" alt="FNAF 2">
+                                    <div class="game-info">
+                                        <div class="game-header">
+                                            <h3>FNAF 2</h3>
+                                        </div>
+                                        <div class="button-group">
+                                            <button onclick="playGame('2ad8ccji2', null, event)">Play Now</button>
+                                            <button class="secondary" onclick="openInNewTab('2ad8ccji2', event)">↗</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="game-card sub-card" data-name="fnaf 3" data-category="General">
+                                    <img src="https://loremflickr.com/400/300/FNAF%203,game" alt="FNAF 3">
+                                    <div class="game-info">
+                                        <div class="game-header">
+                                            <h3>FNAF 3</h3>
+                                        </div>
+                                        <div class="button-group">
+                                            <button onclick="playGame('rjzotar3f', null, event)">Play Now</button>
+                                            <button class="secondary" onclick="openInNewTab('rjzotar3f', event)">↗</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="game-card sub-card" data-name="fnaf 4" data-category="General">
+                                    <img src="https://loremflickr.com/400/300/FNAF%204,game" alt="FNAF 4">
+                                    <div class="game-info">
+                                        <div class="game-header">
+                                            <h3>FNAF 4</h3>
+                                        </div>
+                                        <div class="button-group">
+                                            <button onclick="playGame('ie527hfmr', null, event)">Play Now</button>
+                                            <button class="secondary" onclick="openInNewTab('ie527hfmr', event)">↗</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    
+        <div class="game-card" data-name="temple run 2" data-category="General">
+            <img src="https://loremflickr.com/400/300/Temple%20Run%202,game" alt="Temple Run 2">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Temple Run 2</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('d05de5x6w')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('d05de5x6w')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="undertale yellow" data-category="General">
+            <img src="https://loremflickr.com/400/300/UnderTale%20Yellow,game" alt="UnderTale Yellow">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>UnderTale Yellow</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('iqparlshg')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('iqparlshg')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="99 nights in the forest" data-category="General">
+            <img src="https://loremflickr.com/400/300/99%20Nights%20In%20The%20Forest,game" alt="99 Nights In The Forest">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>99 Nights In The Forest</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('1mfl1e1bf')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('1mfl1e1bf')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="slope" data-category="General">
+            <img src="https://loremflickr.com/400/300/Slope,game" alt="Slope">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Slope</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('ivouit51l')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('ivouit51l')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="eaglecraft minecraft" data-category="General">
+            <img src="https://loremflickr.com/400/300/EagleCraft%20Minecraft,game" alt="EagleCraft Minecraft">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>EagleCraft Minecraft</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('arfj2zxot')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('arfj2zxot')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="fnf" data-category="General">
+            <img src="https://loremflickr.com/400/300/FNF,game" alt="FNF">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>FNF</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('lb8ajoogk')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('lb8ajoogk')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="gta" data-category="General">
+            <img src="https://loremflickr.com/400/300/GTA,game" alt="GTA">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>GTA</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('qdce3jrx4')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('qdce3jrx4')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="skypack" data-category="General">
+            <img src="https://loremflickr.com/400/300/skypack,game" alt="skypack">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>skypack</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('jwwzuyusz')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('jwwzuyusz')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="drift boss" data-category="General">
+            <img src="https://loremflickr.com/400/300/Drift%20Boss,game" alt="Drift Boss">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Drift Boss</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('oj2kl5bf6')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('oj2kl5bf6')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="drive mad" data-category="General">
+            <img src="https://loremflickr.com/400/300/Drive%20Mad,game" alt="Drive Mad">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Drive Mad</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('ewtal7932')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('ewtal7932')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="grow a garden" data-category="General">
+            <img src="https://loremflickr.com/400/300/grow%20a%20garden,game" alt="grow a garden">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>grow a garden</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('id1b2l8lh')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('id1b2l8lh')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="granny" data-category="General">
+            <img src="https://loremflickr.com/400/300/Granny,game" alt="Granny">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Granny</h3>
+                    <span class="category-badge">General</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('thz2gntz4')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('thz2gntz4')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="geometry dash bloodbath" data-category="Geometry dash">
+            <img src="data:image/webp;base64,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" alt="Geometry Dash Bloodbath">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Geometry Dash Bloodbath</h3>
+                    <span class="category-badge">Geometry dash</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('18w0st3pw')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('18w0st3pw')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="geometry dash deadlocked" data-category="Geometry dash">
+            <img src="data:image/webp;base64,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" alt="Geometry Dash Deadlocked">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Geometry Dash Deadlocked</h3>
+                    <span class="category-badge">Geometry dash</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('duolq4xav')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('duolq4xav')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="undertale" data-category="Action">
+            <img src="https://th.bing.com/th/id/OIP.DCyi05Qh_lLRmpQ65Y58FQHaEK?w=301&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Undertale">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Undertale</h3>
+                    <span class="category-badge">Action</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('wb9cgtfzm')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('wb9cgtfzm')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="poly track og" data-category="Racing">
+            <img src="https://loremflickr.com/400/300/Poly%20Track%20Og,game" alt="Poly Track Og">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Poly Track Og</h3>
+                    <span class="category-badge">Racing</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('rk95s0zy8')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('rk95s0zy8')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="poly track racing new" data-category="Racing">
+            <img src="https://loremflickr.com/400/300/Poly%20Track%20Racing%20New,game" alt="Poly Track Racing New">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Poly Track Racing New</h3>
+                    <span class="category-badge">Racing</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('3ixbaocxb')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('3ixbaocxb')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="hole.io" data-category="Strategy">
+            <img src="https://loremflickr.com/400/300/hole.io,game" alt="hole.io">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>hole.io</h3>
+                    <span class="category-badge">Strategy</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('4gy60djh1')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('4gy60djh1')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="cookie clicker" data-category="Strategy">
+            <img src="https://loremflickr.com/400/300/Cookie%20Clicker,game" alt="Cookie Clicker">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Cookie Clicker</h3>
+                    <span class="category-badge">Strategy</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('z0bsgu19s')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('z0bsgu19s')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="cookie clicker mod menu" data-category="Strategy">
+            <img src="https://loremflickr.com/400/300/Cookie%20Clicker%20Mod%20Menu,game" alt="Cookie Clicker Mod Menu">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>Cookie Clicker Mod Menu</h3>
+                    <span class="category-badge">Strategy</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('lmqtdfuwm')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('lmqtdfuwm')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
+        <div class="game-card" data-name="vibeflow (spotify)" data-category="Other">
+            <img src="https://loremflickr.com/400/300/VibeFlow%20(spotify),game" alt="VibeFlow (spotify)">
+            <div class="game-info">
+                <div class="game-header">
+                    <h3>VibeFlow (spotify)</h3>
+                    <span class="category-badge">Other</span>
+                </div>
+                <div class="button-group">
+                    <button onclick="playGame('8khgysvhz')">Play Now</button>
+                    <button class="secondary" onclick="openInNewTab('8khgysvhz')">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        New Tab
+                    </button>
+                </div>
+            </div>
+        </div>
+      
         </main>
+        </div>
+
+        
+        <aside class="right-ad-panel">
+            <a href="https://sites.google.com/view/edu-cation-profile/home" target="_blank">
+                <img src="https://i.ibb.co/NhG1ZhL/Chat-GPT-Image-May-19-2026-09-18-30-PM.png" alt="Advertisement">
+            </a>
+            <div class="ad-label">ADVERTISEMENT</div>
+        </aside>
+        
     </div>
 
     <div id="gameModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <button class="fullscreen-btn" id="fullscreenBtn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
-                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-title" id="modalGameTitle">Game Title</div>
+                <div class="modal-controls">
+                    <div class="modal-stats">
+                        <button class="stat-btn-modal like-btn" id="modalLikeBtn" onclick="handleLike(currentGameId, event)">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.53l-1.35 4.72A2 2 0 0 1 18.48 19H7a2 2 0 0 1-2-2V9a2 2 0 0 1 1.41-.59l3.92-3.92a2 2 0 0 1 2.82 2.82Z"/></svg>
+                            Boost
+                        </button>
+                        <button class="stat-btn-modal dislike-btn" id="modalDislikeBtn" onclick="handleDislike(currentGameId, event)">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14V2"/><path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.53l1.35-4.72A2 2 0 0 1 5.52 5H17a2 2 0 0 1 2 2v8a2 2 0 0 1-1.41.59l-3.92 3.92a2 2 0 0 1-2.82-2.82Z"/></svg>
+                            Pass
+                        </button>
+                    </div>
+                    <button class="fullscreen-btn" id="openTabBtn" onclick="openCurrentGameInNewTab()">External ↗</button>
+                    <button class="fullscreen-btn" id="fullscreenBtn" onclick="toggleFullscreen()">Fullscreen ⛶</button>
+                    <span class="close" onclick="closeModal()">&times;</span>
+                </div>
             </div>
             <div id="gameFrameContainer"></div>
+            
+            <div class="game-footer-ad">
+                <a href="https://discord.com/invite/KKfe6WAPTu" target="_blank">
+                    <img src="https://cdn-useast1.kapwing.com/static/templates/video-game-discord-server-banner-template-regular-aded2a2a.webp" alt="Advertisement">
+                </a>
+                <div class="ad-label">ADVERTISEMENT</div>
+            </div>
+            
         </div>
     </div>
 
